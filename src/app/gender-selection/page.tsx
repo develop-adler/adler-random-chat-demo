@@ -85,7 +85,7 @@ const Page: React.FC = () => {
                   inset: 0,
                   borderRadius: "9999px",
                   border: `${selectedGender === 'female' ? '2px #FFF' : '1px #9FABD2'} solid`,
-                  backgroundColor: "EBEAEF",
+                  backgroundColor: "#EBEAEF",
                   opacity: 0.3,
                   boxShadow: selectedGender === 'female'
                       ? "0px -2px 4px 0px #FFF inset, 0px 5px 4px 0px rgba(0, 0, 0, 0.40) inset"
@@ -122,7 +122,7 @@ const Page: React.FC = () => {
                   position: "absolute",
                   inset: 0,
                   borderRadius: "9999px",
-                  border: `${selectedGender === 'female' ? '2px #FFF' : '1px #9FABD2'} solid`,
+                  border: `${clicked ? '2px #FFF' : '1px #9FABD2'} solid`,
                   backgroundColor: "rgba(42, 59, 110, 0.12)",
                   opacity: 0.3,
                   boxShadow: clicked

@@ -40,7 +40,7 @@ const Page: React.FC = () => {
                 <button
                     onClick={handleClicked}
                     style={{ fontFamily: "var(--font-inter)" }}
-                    className="relative rounded-full w-[262px] h-[45px] mb-[clamp(0px,7.1vh,62px)]"
+                    className="relative rounded-full w-[262px] h-[45px] mb-[clamp(0px,7.1vh,62px)] cursor-pointer"
                     >
                     {/* Background with opacity and shadows */}
                     <span

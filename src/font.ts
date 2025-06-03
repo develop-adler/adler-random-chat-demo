@@ -4,6 +4,10 @@ export const pretendardFontSetting = localFont({
   src: [
     {
       path: '../public/assets/fonts/PretendardVariable.woff2',
+      weight: '200',
+    },
+    {
+      path: '../public/assets/fonts/PretendardVariable.woff2',
       weight: '400',
     },
     {
