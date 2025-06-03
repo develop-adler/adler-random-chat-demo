@@ -41,8 +41,7 @@ const Page: React.FC = () => {
                     onClick={handleClicked}
                     style={{ fontFamily: "var(--font-inter)" }}
                     className="relative rounded-full w-[262px] h-[45px] mb-[clamp(0px,7.1vh,62px)] cursor-pointer"
-                    >
-                    {/* Background with opacity and shadows */}
+                >
                     <span
                         aria-hidden="true"
                         style={{
@@ -62,7 +61,6 @@ const Page: React.FC = () => {
                         }}
                     />
 
-                    {/* Text on top, fully opaque */}
                     <span className="relative z-10 flex items-center justify-center h-full text-[14px] font-semibold leading-normal text-[#555]">
                         Begin Journey
                     </span>

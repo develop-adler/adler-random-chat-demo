@@ -32,8 +32,7 @@ const Page: React.FC = () => {
                     onClick={handleGoogleClicked}
                     style={{ fontFamily: "var(--font-inter)" }}
                     className="relative rounded-full w-full max-w-[342px] h-[50px] cursor-pointer"
-                    >
-                    {/* Background with opacity and shadows */}
+                >
                     <span
                         aria-hidden="true"
                         style={{
@@ -53,7 +52,6 @@ const Page: React.FC = () => {
                         }}
                     />
 
-                    {/* Text on top, fully opaque */}
                     <span className="relative z-10 gap-[5px] flex items-center justify-center h-full text-[14px] font-semibold leading-normal text-[#555]">
                         <Image 
                             src='/assets/imgs/google.png'
@@ -68,8 +66,7 @@ const Page: React.FC = () => {
                     onClick={handleFacebookClicked}
                     style={{ fontFamily: "var(--font-inter)" }}
                     className="relative rounded-full w-full max-w-[342px] h-[50px] cursor-pointer"
-                    >
-                    {/* Background with opacity and shadows */}
+                >
                     <span
                     aria-hidden="true"
                     style={{
@@ -86,7 +83,6 @@ const Page: React.FC = () => {
                     }}
                     />
 
-                    {/* Text on top, fully opaque */}
                     <span className="relative z-10 gap-[4px] flex items-center justify-center h-full text-[14px] font-semibold leading-normal text-[#F4F4F4]">
                         <Image 
                             src='/assets/imgs/facebook.png'

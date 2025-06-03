@@ -41,8 +41,7 @@ const Page: React.FC = () => {
               onClick={() => {setSelectedGender('male')}}
               style={{ fontFamily: "var(--font-inter)" }}
               className="relative rounded-full w-full max-w-[262px] h-[50px] mt-[22px] cursor-pointer"
-              >
-              {/* Background with opacity and shadows */}
+          >
               <span
                   aria-hidden="true"
                   style={{
@@ -58,7 +57,6 @@ const Page: React.FC = () => {
                   zIndex: 0,
                   }}
               />
-              {/* Text on top, fully opaque */}
               <span 
                 className="relative z-10 gap-[4px] flex items-center justify-center h-full text-[#12B2D2] text-[12px] font-semibold leading-normal" 
                 style={{ fontFamily: pretendardFontSetting.style.fontFamily }}
@@ -76,8 +74,7 @@ const Page: React.FC = () => {
               onClick={() => {setSelectedGender('female')}}
               style={{ fontFamily: "var(--font-inter)" }}
               className="relative rounded-full w-full mt-[5px] max-w-[262px] h-[50px] cursor-pointer"
-              >
-              {/* Background with opacity and shadows */}
+          >
               <span
                   aria-hidden="true"
                   style={{
@@ -94,7 +91,6 @@ const Page: React.FC = () => {
                   }}
               />
           
-              {/* Text on top, fully opaque */}
               <span 
                 className="relative z-10 gap-[4px] flex items-center justify-center h-full text-[#9C45FF] text-[12px] font-semibold leading-normal" 
                 style={{ fontFamily: pretendardFontSetting.style.fontFamily }}
@@ -114,8 +110,7 @@ const Page: React.FC = () => {
               onClick={handleNextClicked}
               style={{ fontFamily: "var(--font-inter)" }}
               className="relative rounded-full w-full mt-[5px] max-w-[262px] h-[50px] cursor-pointer"
-              >
-              {/* Background with opacity and shadows */}
+            >
               <span
                   aria-hidden="true"
                   style={{
@@ -132,7 +127,6 @@ const Page: React.FC = () => {
                   }}
               />
           
-              {/* Text on top, fully opaque */}
               <span 
                 className="relative z-10 gap-[4px] flex items-center justify-center h-full text-[#2F314E] text-[14px] font-semibold leading-normal" 
                 style={{ fontFamily: "var(--font-inter)" }}
