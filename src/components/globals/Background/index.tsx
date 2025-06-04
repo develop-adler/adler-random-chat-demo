@@ -6,7 +6,10 @@ interface BackgroundProps {
 
 const Background: React.FC<BackgroundProps> = ({ children, className }) => {
   return (
-    <div className={`relative overflow-hidden ${className ? ` ${className}` : ''}`}>
+    <div 
+        className={`relative overflow-hidden ${className ? ` ${className}` : ''}`}
+        style={{ height: className === 'h-screen' ? '100dvh' : ''}}
+    >
       <div className="inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/assets/imgs/background.png')" }}></div>
       <video 
         autoPlay 

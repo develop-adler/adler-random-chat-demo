@@ -58,11 +58,11 @@ const Page: React.FC = () => {
         return shuffled.slice(0, n);
     };
 
-    console.log('Recommended Countries:', recommendedCountries);
-    console.log('All Countries:', countries);
-
     return (
-            <div className='bg-[#EEEEFA] w-full h-screen flex flex-col p-[24px] pt-[50px] relative'>
+            <div 
+                className='bg-[#EEEEFA] w-full flex flex-col p-[24px] pt-[50px] relative'
+                style={{ height: '100dvh' }}
+            >
                 <div
                     className='text-[18px] font-[700] text-black text-[18px] leading-normal'
                     style={{ fontFamily: pretendardFontSetting.style.fontFamily }}

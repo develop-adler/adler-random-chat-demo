@@ -19,7 +19,10 @@ const Page: React.FC = () => {
     }
 
     return (
-        <div className="relative h-screen min-w-[262px] bg-[#EEEEFA] flex flex-col">
+        <div 
+            className="relative min-w-[262px] bg-[#EEEEFA] flex flex-col"
+            style={{ height: '100dvh' }}
+        >
             <div className="relative h-full max-h-[64%]">
                 <div className="absolute bottom-0 z-50 left-0 w-full h-[288px] flex-shrink-0 bg-gradient-to-b from-[rgba(238,238,250,0)] to-[#EEEefa]" />
                 <Background className="h-full" />
@@ -45,19 +48,17 @@ const Page: React.FC = () => {
                     <span
                         aria-hidden="true"
                         style={{
-                        position: "absolute",
-                        inset: 0,
-                        borderRadius: "9999px",
-                        border: "#FFFFFF",
-                        backgroundColor: "#EEEEFA",
-                        opacity: 0.3,
-                        filter: clicked
-                            ? "none"
-                            : "drop-shadow(0px 4px 4px rgba(17, 17, 17, 0.8)) drop-shadow(0px -8px 4px #FFF)",
-                        boxShadow: clicked
-                            ? "inset 0px 5px 4px 0 rgba(0, 0, 0, 0.4), inset 0px -6px 4px 0 #FFF"
-                            : "none",
-                        zIndex: 0,
+                            position: "absolute",
+                            inset: 0,
+                            borderRadius: "9999px",
+                            border: "#FFFFFF",
+                            backgroundColor: "#EEEEFA",
+                            opacity: 0.3,
+                            transition: "box-shadow 0.3s ease-in-out",
+                            boxShadow: clicked
+                                ? "inset 0px 5px 4px 0 rgba(0, 0, 0, 0.4), inset 0px -6px 4px 0 #FFF"
+                                : "0px 4px 4px rgba(17, 17, 17, 0.8), 0px -8px 4px #FFF",
+                            zIndex: 0,
                         }}
                     />
 

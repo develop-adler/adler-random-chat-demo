@@ -23,7 +23,10 @@ const Page: React.FC = () => {
   }
 
     return (
-      <div className="relative w-full h-screen flex flex-col items-center justify-center bg-[#EEEEFA]">
+      <div 
+        className="relative w-full flex flex-col items-center justify-center bg-[#EEEEFA]"
+        style={{ height: '100dvh'}}
+      >
         <div className="w-full flex flex-col gap-[10px] -mt-[50px] items-center justify-center">
           <div 
             className={`text-black text-[18px] font-bold leading-normal`}
@@ -51,6 +54,7 @@ const Page: React.FC = () => {
                   border: `${selectedGender === 'male' ? '2px solid #FFF' : '1px solid #9FABD2'}`,
                   backgroundColor: "rgba(42, 59, 110, 0.12)",
                   opacity: 0.3,
+                  transition: "box-shadow 0.3s ease-in-out",
                   boxShadow: selectedGender === 'male'
                       ? "0px -2px 4px 0px #FFF inset, 0px 5px 4px 0px rgba(0, 0, 0, 0.40) inset"
                       : "0px 4px 4px rgba(17, 17, 17, 0.80), 0px -8px 4px #FFF",
@@ -84,6 +88,7 @@ const Page: React.FC = () => {
                   border: `${selectedGender === 'female' ? '2px #FFF' : '1px #9FABD2'} solid`,
                   backgroundColor: "#EBEAEF",
                   opacity: 0.3,
+                  transition: "box-shadow 0.3s ease-in-out",
                   boxShadow: selectedGender === 'female'
                       ? "0px -2px 4px 0px #FFF inset, 0px 5px 4px 0px rgba(0, 0, 0, 0.40) inset"
                       : "0px 4px 4px rgba(17, 17, 17, 0.80), 0px -8px 4px #FFF",
@@ -120,6 +125,7 @@ const Page: React.FC = () => {
                   border: `${clicked ? '2px #FFF' : '1px #9FABD2'} solid`,
                   backgroundColor: "rgba(42, 59, 110, 0.12)",
                   opacity: 0.3,
+                  transition: "box-shadow 0.3s ease-in-out",
                   boxShadow: clicked
                       ? "0px -2px 4px 0px #FFF inset, 0px 5px 4px 0px rgba(0, 0, 0, 0.40) inset"
                       : "0px 4px 4px rgba(17, 17, 17, 0.80), 0px -8px 4px #FFF",
